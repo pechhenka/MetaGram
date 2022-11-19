@@ -1,12 +1,14 @@
-package org.carboncock.metagram.annotation;
+package org.carboncock.metagram.annotation.handle;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.METHOD)
+/**
+ * @author Pavel Sharaev (mail@pechhenka.ru)
+ */
+@Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface HelpIdentifier {
-    String value();
+public @interface HandleAny {
 }
